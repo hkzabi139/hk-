@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🔐 Sirf Haleema Ke Liye</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      min-height: 100vh;
+      padding: 40px 20px;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    #letter {
+      white-space: pre-line;
+      border: 1px solid #ffffff;
+      padding: 30px;
+      margin-top: 20px;
+      display: none;
+      max-width: 700px;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #00ffcc;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid #ffffff;
+      background: transparent;
+      color: #ffffff;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #00ffcc;
+      border: none;
+      color: #0d0d0d;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #00ffaa;
+    }
+
+    #whatsappBtn {
+      display: none;
+      margin-top: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    #whatsappBtn:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔐 Sirf Haleema Ke Liye</h1>
+  <input type="password" id="passwordInput" placeholder="Please Inter Code" />
+  <button onclick="checkPassword()">Unlock</button>
+
+  <div id="letter">
+Assalamualaikum 😊
+
+Mujhe nhi pata kaisay start karun, bas itna kehna tha ke kuch 
+baatein dil mein thi jo share karni chahiyein.
+
+Humara rishta phir chahe ladai se shuru hua ya friendship mein badla 
+lekin waqt ke sath tumhari personality ka asar dil pe reh gaya. Tumhari
+baat karne ka andaaz, nature aur positive energy... sab kuch quietly pasand aata gaya.
+
+Main yeh baat kisi expectation ke sath nahi keh raha. Sirf is liye 
+keh raha hoon ke jo mehsoos karta hoon, us mein sachai ho.
+
+Tumhari respect mere liye sabse important hai. Agar tum kuch mehsoos nahi
+ karti ho, toh bhi koi baat nahi — hum waise hi ache dost rahenge.
+
+Just felt you should know. Thank you for being this kind of person. 🙂
+  </div>
+
+  <a id="whatsappBtn" href="https://wa.me/qr/RPY44RONOWU5N1" target="_blank">💬 Anaswer Box🙂</a>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById("passwordInput").value;
+      if (input === "haleema136") {
+        document.getElementById("letter").style.display = "block";
+        document.getElementById("whatsappBtn").style.display = "inline-block";
+      } else {
+        alert("❌ Wrong Password! Ya apke lia nhi please don't Open.");
+      }
+    }
+  </script>
+</body>
+</html>
